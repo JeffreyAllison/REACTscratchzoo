@@ -13,7 +13,7 @@ export default function ZooOpen() {
 
   return (
     <div>
-      <div>{isOpen ? 'The Zoo is open!' : 'The Zoo is closed for the day'}</div>
+      <div className="sign">{isOpen ? 'The Zoo is open!' : 'The Zoo is closed for the day'}</div>
       <button onClick={handleOpenZoo}>ZooOpen</button>
       <button onClick={handleCloseZoo}>ZooNope</button>
     </div>
