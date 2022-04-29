@@ -7,7 +7,8 @@ function App() {
   const [dragonPower, setDragonPower] = useState(3);
   const [mammothPower, setMammothPower] = useState(3);
   const ATTACK_MODIFIER = 0.8;
-  const [animal, setAnimal] = useState(['dodo', 'bison']);
+  const [animal, setAnimal] = useState(['dodo']);
+  const [isOpen, setIsOpen] = useState(false);
 
   function handleDragonAttack() {
     setMammothPower(mammothPower - ATTACK_MODIFIER);
@@ -55,6 +56,14 @@ function App() {
     setAnimal([...animal]);
   }
 
+  function handleOpenZoo() {
+    setIsOpen(true);
+  }
+
+  function handleCloseZoo() {
+    setIsOpen(false);
+  }
+
   return (
     <div className="App">
       <div className="fight">
@@ -82,7 +91,9 @@ function App() {
         <button onClick={handleAddDragon}>Dragon</button>
         <button onClick={handleAddMammoth}>Mammoth</button>
       </div>
-      <ZooOpen />
+      <ZooOpen isOpen={isOpen} />
+      <button onClick={handleOpenZoo}>ZooOpen</button>
+      <button onClick={handleCloseZoo}>ZooNope</button>
     </div>
   );
 }
