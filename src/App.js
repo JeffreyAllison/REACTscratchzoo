@@ -4,8 +4,8 @@ import ZooOpen from './ZooOpen.js';
 import AnimalParade from './AnimalParade.js';
 
 function App() {
-  const [dragonPower, setDragonPower] = useState(1);
-  const [mammothPower, setMammothPower] = useState(1);
+  const [dragonPower, setDragonPower] = useState(3);
+  const [mammothPower, setMammothPower] = useState(3);
   const ATTACK_MODIFIER = 0.8;
   const [animal, setAnimal] = useState(['dodo', 'bison']);
 
