@@ -4,7 +4,7 @@ export default function Animal({ animals }) {
   return (
     <div className="animal">
       {animals === 'dodo' && '🦤'}
-      {animals === 'bison' && '🦬'}
+      {animals === 'grey' && '👽'}
       {animals === 'gorilla' && '🦍'}
       {animals === 'bat' && '🦇'}
       {animals === 'dragon' && '🐉'}

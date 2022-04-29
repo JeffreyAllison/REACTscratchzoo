@@ -1,5 +1,5 @@
 body {
-  background-image: url('./zoo.png');
+  background-image: url('./jungle.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -51,7 +51,8 @@ body {
   margin: 80px;
   width: 80%;
   border-radius: 30px;
-  background-color: rgba(248, 88, 85, 0.7);
+  background-color: transparent;
+  opacity: 98%;
 }
 
 .fight .fighter {
@@ -62,7 +63,8 @@ body {
   align-items: center;
 }
 .parade {
-  background-color: rgba(249, 249, 139, 0.7);
+  background-color: rgb(163, 184, 163);
+  opacity: 88%;
   display: flex;
   align-content: center;
 }
@@ -71,9 +73,13 @@ body {
   flex-direction: column;
   align-content: center;
   align-items: stretch;
-  background-color: rgb(192, 108, 56);
+  background-color: rgb(249, 239, 175);
   width: 120px;
   padding: 10px;
   margin: 30px 650px 30px 650px;
   border-radius: 30%;
+}
+
+.animal {
+  font-size: xx-large;
 }

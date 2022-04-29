@@ -7,7 +7,7 @@ function App() {
   const [dragonPower, setDragonPower] = useState(3);
   const [mammothPower, setMammothPower] = useState(3);
   const ATTACK_MODIFIER = 0.8;
-  const [animal, setAnimal] = useState(['dodo']);
+  const [animal, setAnimal] = useState(['dragon', 'mammoth']);
   const [isOpen, setIsOpen] = useState(false);
 
   function handleDragonAttack() {
@@ -31,8 +31,8 @@ function App() {
     setAnimal([...animal]);
   }
 
-  function handleAddBison() {
-    animal.push('bison');
+  function handleAddGrey() {
+    animal.push('grey');
     setAnimal([...animal]);
   }
 
@@ -85,15 +85,15 @@ function App() {
       <AnimalParade animals={animal} />
       <div className="animal-buttons">
         <button onClick={handleAddDodo}>Dodo</button>
-        <button onClick={handleAddBison}>Bison</button>
+        <button onClick={handleAddGrey}>Grey</button>
         <button onClick={handleAddGorilla}>Gorilla</button>
         <button onClick={handleAddBat}>Bat</button>
         <button onClick={handleAddDragon}>Dragon</button>
         <button onClick={handleAddMammoth}>Mammoth</button>
       </div>
       <ZooOpen isOpen={isOpen} />
-      <button onClick={handleOpenZoo}>ZooOpen</button>
-      <button onClick={handleCloseZoo}>ZooNope</button>
+      <button onClick={handleOpenZoo}>Enter</button>
+      <button onClick={handleCloseZoo}>Exit</button>
     </div>
   );
 }
