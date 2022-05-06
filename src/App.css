@@ -1,3 +1,9 @@
+body {
+  background-image: url('./jungle.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +41,43 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.fight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 80px;
+  width: 80%;
+  border-radius: 30px;
+  background-color: transparent;
+}
+
+.fight .fighter {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.parade {
+  background-color: rgb(163, 184, 163);
+  display: flex;
+  align-content: center;
+}
+.sign {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: stretch;
+  background-color: rgb(249, 239, 175);
+  width: 120px;
+  padding: 10px;
+  margin: 30px 650px 30px 650px;
+  border-radius: 30%;
+}
+
+.animal {
+  font-size: xx-large;
 }
