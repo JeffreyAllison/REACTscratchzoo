@@ -52,7 +52,6 @@ body {
   width: 80%;
   border-radius: 30px;
   background-color: transparent;
-  opacity: 98%;
 }
 
 .fight .fighter {
@@ -64,7 +63,6 @@ body {
 }
 .parade {
   background-color: rgb(163, 184, 163);
-  opacity: 88%;
   display: flex;
   align-content: center;
 }
