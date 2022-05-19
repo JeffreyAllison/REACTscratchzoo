@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import ZooOpen from './ZooOpen.js';
 import AnimalParade from './AnimalParade.js';
+import Button from '@mui/material/Button';
 
 function App() {
   const [dragonPower, setDragonPower] = useState(3);

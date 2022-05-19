@@ -37,7 +37,7 @@ test('default state of parade animals is zero, clicking a parade animal once wil
   expect(greyClicked.length).toBe(1);
 });
 
-test('', () => {
+test('when the open and close zoo buttons are clicked, the appropriate text will display on screener', () => {
   render(<App />);
   const closedButton = screen.queryByText(/Exit/i);
   const openButton = screen.queryByText(/Enter/i);
