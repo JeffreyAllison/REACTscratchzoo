@@ -9,6 +9,7 @@ export default function Animal({ animals }) {
       {animals === 'bat' && '🦇'}
       {animals === 'dragon' && '🐉'}
       {animals === 'mammoth' && '🦣'}
+      {animals === 'camel' && '🐫'}
     </div>
   );
 }

@@ -7,7 +7,7 @@ function App() {
   const [dragonPower, setDragonPower] = useState(3);
   const [mammothPower, setMammothPower] = useState(3);
   const ATTACK_MODIFIER = 0.8;
-  const [animal, setAnimal] = useState(['dragon', 'mammoth']);
+  const [animal, setAnimal] = useState(['']);
   const [isOpen, setIsOpen] = useState(false);
 
   function handleDragonAttack() {
