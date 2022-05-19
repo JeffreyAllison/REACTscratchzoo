@@ -3,6 +3,7 @@ import './App.css';
 import ZooOpen from './ZooOpen.js';
 import AnimalParade from './AnimalParade.js';
 import Button from '@mui/material/Button';
+import CustomButton from './CustomButton';
 
 function App() {
   const [dragonPower, setDragonPower] = useState(3);
@@ -72,29 +73,31 @@ function App() {
           <div className="emoji" style={{ fontSize: `${dragonPower}rem` }}>
             🐲
           </div>
-          <button onClick={handleDragonAttack}>The Dragon attacks the Mammoth</button>
-          <button onClick={handleDragonScales}>The Dragon regenerates its scales</button>
+          <CustomButton onClick={handleDragonAttack}>The Dragon attacks the Mammoth</CustomButton>
+          <CustomButton onClick={handleDragonScales}>
+            The Dragon regenerates its scales
+          </CustomButton>
         </div>
         <div className="fighter">
           <div className="emoji" style={{ fontSize: `${mammothPower}rem` }}>
             🦣
           </div>
-          <button onClick={handleMammothAttack}>The Mammoth attacks the Dragon</button>
-          <button onClick={handleMammothTusks}>The Mammoth sharpens its tusks</button>
+          <CustomButton onClick={handleMammothAttack}>The Mammoth attacks the Dragon</CustomButton>
+          <CustomButton onClick={handleMammothTusks}>The Mammoth sharpens its tusks</CustomButton>
         </div>
       </div>
       <AnimalParade animals={animal} />
       <div className="animal-buttons">
-        <button onClick={handleAddDodo}>Dodo</button>
-        <button onClick={handleAddGrey}>Grey</button>
-        <button onClick={handleAddGorilla}>Gorilla</button>
-        <button onClick={handleAddBat}>Bat</button>
-        <button onClick={handleAddDragon}>Dragon</button>
-        <button onClick={handleAddMammoth}>Mammoth</button>
+        <CustomButton onClick={handleAddDodo}>Dodo</CustomButton>
+        <CustomButton onClick={handleAddGrey}>Grey</CustomButton>
+        <CustomButton onClick={handleAddGorilla}>Gorilla</CustomButton>
+        <CustomButton onClick={handleAddBat}>Bat</CustomButton>
+        <CustomButton onClick={handleAddDragon}>Dragon</CustomButton>
+        <CustomButton onClick={handleAddMammoth}>Mammoth</CustomButton>
       </div>
       <ZooOpen isOpen={isOpen} />
-      <button onClick={handleOpenZoo}>Enter</button>
-      <button onClick={handleCloseZoo}>Exit</button>
+      <CustomButton onClick={handleOpenZoo}>Enter</CustomButton>
+      <CustomButton onClick={handleCloseZoo}>Exit</CustomButton>
     </div>
   );
 }
