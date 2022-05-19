@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
 import ZooOpen from './ZooOpen.js';
-import Zoo from './Zoo.js';
 import AnimalParade from './AnimalParade.js';
-import Button from '@mui/material/Button';
 import CustomButton from './CustomButton';
 
-function App() {
+function Zoo() {
   const [dragonPower, setDragonPower] = useState(3);
   const [mammothPower, setMammothPower] = useState(3);
   const ATTACK_MODIFIER = 0.8;
@@ -103,4 +101,4 @@ function App() {
   );
 }
 
-export default App;
+export default Zoo;
