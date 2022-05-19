@@ -80,3 +80,13 @@ body {
 .animal {
   font-size: xx-large;
 }
+
+.bar-chart {
+  height: 200px;
+  width: 200px;
+}
+
+.pie-chart {
+  height: 200px;
+  width: 200px;
+}

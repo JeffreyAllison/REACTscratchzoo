@@ -1,18 +1,19 @@
 import React from 'react';
-import reactDom from 'react-dom';
 import { VictoryBar, VictoryChart } from 'victory';
 
 export default function BarChart() {
   return (
     <div>
-      <VictoryChart domainPadding={30}>
+      <VictoryChart domainPadding={100}>
         <VictoryBar
-          width={300}
+          className="bar-chart"
+          height={50}
+          width={50}
           data={[
-            { quarter: 1, earnings: 800 },
-            { quarter: 2, earnings: 900 },
-            { quarter: 3, earnings: 100 },
-            { quarter: 4, earnings: 222 },
+            { quarter: 'Dec', earnings: 800 },
+            { quarter: 'Jan', earnings: 900 },
+            { quarter: 'Feb', earnings: 100 },
+            { quarter: 'Mar', earnings: 222 },
           ]}
           x="quarter"
           y="earnings"
